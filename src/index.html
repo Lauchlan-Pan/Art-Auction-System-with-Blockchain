@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ArtAuc Token Sale and Art Marketplace</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container" style="width: 700px;">
+    <h1 class="text-center">ArtAuc Token Sale and Art Marketplace</h1>
+    <hr>
+    <p id="accountAddress"></p>
+
+    <!-- Loader -->
+    <div id="loader">
+      <p class="text-center">Loading...</p>
+    </div>
+
+    <!-- Content -->
+    <div id="content" style="display: none;">
+      <!-- Token Purchase -->
+      <h2>Buy Tokens</h2>
+      <p>Token price is <span class="token-price">0.001</span> Ether. </p>
+      <p>You currently have <span class="dapp-balance"></span> ArtAuc Tokens.</p>
+      <form onSubmit="App.buyTokens(); return false;">
+        <div class="form-group">
+          <label>Number of Tokens to Buy</label>
+          <input id="numberOfTokens" class="form-control" type="number" value="1" min="1">
+        </div>
+        <button type="submit" class="btn btn-primary">Buy Tokens</button>
+      </form>
+      <hr>
+
+      <!-- Art Marketplace -->
+      <h2>Art Marketplace</h2>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Art ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price (Tokens)</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="artResults">
+          <!-- Art items will be rendered here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@0.20.6/dist/web3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/truffle-contract@3.0.6/dist/truffle-contract.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
