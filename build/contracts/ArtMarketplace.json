@@ -6520,12 +6520,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x3827F371Dfdc7EF155Ef1E6f9De646F75BCcBa2A",
-      "transactionHash": "0xaf121f5766da6d626348be53a86d7e5d12a364fe480b96e3e707f175c845b013"
+      "address": "0x82Dcc3C4535F5F5383F43c9EF85C5bF88F37C96A",
+      "transactionHash": "0x15f0da0a6e4acbc07dd28ddec443dc4a03d33285fe756a0abe87cbf9279c493f"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-10-16T07:25:42.617Z",
+  "updatedAt": "2024-10-16T07:26:56.879Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
