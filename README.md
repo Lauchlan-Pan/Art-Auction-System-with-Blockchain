@@ -8,4 +8,4 @@ To use this project, u will need:
 3. Ganache: https://archive.trufflesuite.com/ganache/
 4. Metamask: Search extension on Google
 
-
+## Node Modules are not included here.
